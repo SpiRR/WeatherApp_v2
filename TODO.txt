@@ -1,0 +1,29 @@
+Weather App TODO:
+App.js
+
+    API call -> convert to JSON to access data
+            Via. a async funtion that checks if city and country are filled out when entered. 
+            If yes -> set values from the data fetched from API to value (ex. temp: data.temp)
+            If no -> set all values from API to undefined and error: 'Enter city and country'
+            
+        const api_key = '4f350d63f4e92a8f43ed43220ff18414'
+
+        getWeather = async (event) => {
+        // Preventing the page to refresh when btn is clicked
+
+        event.preventDefault();
+
+        const city = event.target.elements.city.value
+        const country = event.target.elements.country.value
+
+        const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${API_KEY}&units=metric`);
+
+        //Convert data from API to JSON
+        const data = await api_call.json();
+
+Form.js
+    Form for input city and country -> that calls the API function
+
+Output.js
+    Display output for the weather
+
