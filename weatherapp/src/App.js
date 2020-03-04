@@ -8,6 +8,7 @@ import {
 import Form from './pages/FormPage';
 import About from './pages/AboutPage';
 import WeatherOutput from './pages/WeatherOutput';
+import './pages/style.css';
 
 const api_key = '4f350d63f4e92a8f43ed43220ff18414';
 
@@ -68,6 +69,7 @@ export default class App extends Component {
 
     return(
       <div>
+        
          <Router>  
           <nav>
             <button>
@@ -84,7 +86,7 @@ export default class App extends Component {
           <About />
         </Route>
 
-        <Route path="/">          
+        <Route path="/">         
                     <Form getWeather={this.getWeather} />
 
                     <WeatherOutput
