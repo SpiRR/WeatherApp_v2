@@ -1,0 +1,68 @@
+body {
+    box-sizing: border-box;
+    position: relative;
+    font-size: 15px;
+}
+
+.navbar {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar button {
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.navbar button a {
+    text-decoration: none;
+}
+
+.navbar button:hover{
+    background-color: teal;
+}
+
+.formcontainer {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: blue;
+}
+
+.formcontainer .weatherForm {
+    display: inline-block;
+    width: 20%;
+    background-color: tomato;
+}
+
+.formcontainer .weatherForm input, .formcontainer .weatherForm button{
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.formcontainer .weatherForm input {
+    padding: 5px 0px;
+    
+}
+
+.formcontainer .weatherForm button {
+    background-color: rgb(114, 230, 117);
+    text-align: center;
+    border: none;
+    padding: 5px 5px;
+}
+
+.aboutcontainer {
+    background-color: blue;
+}
+
+.weatherinfo {
+    background-color: blue;
+}

@@ -71,7 +71,7 @@ export default class App extends Component {
       <div>
         
          <Router>  
-          <nav>
+          <nav className="navbar">
             <button>
               <Link to={'/'}>Home</Link>
             </button>
