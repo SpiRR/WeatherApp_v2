@@ -1,7 +1,19 @@
 body {
     box-sizing: border-box;
-    position: relative;
     font-size: 15px;
+}
+
+.bg-img {
+    background-image: url('./images/Weather-Background.jpg');
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 }
 
 .navbar {
@@ -31,38 +43,54 @@ body {
     text-align: center;
     margin-top: 50px;
     padding: 20px;
-    background-color: blue;
 }
 
 .formcontainer .weatherForm {
     display: inline-block;
     width: 20%;
-    background-color: tomato;
 }
 
-.formcontainer .weatherForm input, .formcontainer .weatherForm button{
+.formcontainer .weatherForm button{
     font-size: 12px;
     display: block;
     margin-bottom: 10px;
     width: 100%;
+    border-radius: 5%;
 }
 
 .formcontainer .weatherForm input {
     padding: 5px 0px;
-    
+    border: none;
+    border-radius: 5%;
+    outline: none;
 }
+
+.formcontainer .weatherForm input:first-child {
+    margin-right: 14px;
+}
+
+.formcontainer .weatherForm input[type=text] {
+    padding-left: 6px;
+}  
 
 .formcontainer .weatherForm button {
     background-color: rgb(114, 230, 117);
     text-align: center;
     border: none;
     padding: 5px 5px;
+    margin-top: 20px;
 }
 
-.aboutcontainer {
-    background-color: blue;
-}
+/* .aboutcontainer {
+} */
+
 
 .weatherinfo {
-    background-color: blue;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    z-index: 15;
+    top: 40%;
+    left: 55%;
+    margin: -100px 0 0 -150px;
 }

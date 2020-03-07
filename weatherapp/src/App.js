@@ -83,10 +83,12 @@ export default class App extends Component {
         <Switch>
 
         <Route path="/about">
+          <div className="bg-img"></div>
           <About />
         </Route>
 
-        <Route path="/">         
+        <Route path="/"> 
+          <div className="bg-img"></div>        
                     <Form getWeather={this.getWeather} />
 
                     <WeatherOutput
