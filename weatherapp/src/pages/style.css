@@ -122,3 +122,13 @@ body {
 } */
 
 
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+  
+  .copyrightimg {
+    height: 30px;
+    margin-bottom: -9px;
+  }
