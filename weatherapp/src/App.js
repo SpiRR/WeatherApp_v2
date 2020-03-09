@@ -10,9 +10,12 @@ import About from './pages/AboutPage';
 import Copyright from './pages/Copyright'
 import WeatherOutput from './pages/WeatherOutput';
 import './pages/style.css';
+import api from './data/api.json';
 
-// shouldn't be committet fecth from file?
-const api_key = ;
+// Load from file that wont be pushed!
+// const api_key = ;
+
+
 
 export default class App extends Component {
 
@@ -52,7 +55,7 @@ export default class App extends Component {
         feels_like: api_data.main.feels_like,
         error: undefined 
       });
-    } else {
+    } else { // Make it less cluttered (can you remove this else?)
       this.setState({
         city: undefined,
         country: undefined,
