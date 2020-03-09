@@ -14,7 +14,7 @@ export default class WeatherOutput extends Component {
                 {this.props.temp_min && <p> <label><strong>Min. Temperature: </strong></label> <i>{this.props.temp_min} </i> <FaTemperatureLow className='FaTemperatureLow' /></p>}
                 {this.props.temp_max && <p> <label><strong>Max. Temperature: </strong></label> <i>{this.props.temp_max} </i> <FaTemperatureHigh className='FaTemperatureHigh'/></p>}
                 {this.props.feels_like && <p> <label><strong>Temp. feels like: </strong></label> <i>{this.props.feels_like}</i> &#8451; </p>}
-                {this.props.error && <p className="error"> <strong>{this.props.error} </strong></p>}
+                {this.props.error && <p className="error"> <strong>{this.props.error}! </strong></p>}
             </div>
         );
     }

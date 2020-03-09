@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Form from './pages/FormPage';
 import About from './pages/AboutPage';
+import Copyright from './pages/Copyright'
 import WeatherOutput from './pages/WeatherOutput';
 import './pages/style.css';
 
@@ -105,6 +106,8 @@ export default class App extends Component {
         </Route>
         </Switch>
         </Router>
+
+        <Copyright />
       </div>
     );
   }

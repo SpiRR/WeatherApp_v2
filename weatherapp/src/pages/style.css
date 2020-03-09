@@ -32,10 +32,15 @@ body {
 
 .navbar button a {
     text-decoration: none;
+    color: black;
 }
 
 .navbar button:hover{
-    background-color: teal;
+    background-color: lightblue;
+}
+
+.navbar button a::after {
+    color: black;
 }
 
 .formcontainer {
@@ -52,9 +57,9 @@ body {
 
 .formcontainer .weatherForm button{
     font-size: 12px;
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
-    width: 100%;
+    width: 82%;
     border-radius: 5%;
 }
 
@@ -81,16 +86,49 @@ body {
     margin-top: 20px;
 }
 
-/* .aboutcontainer {
-} */
-
-
 .weatherinfo {
     position: absolute;
     width: 300px;
     height: 200px;
     z-index: 15;
-    top: 40%;
-    left: 55%;
+    top: 33%;
+    left: 53%;
     margin: -100px 0 0 -150px;
 }
+
+.error {
+    position: absolute;
+    width: 54%;
+    z-index: 15;
+    top: 65%;
+    left: 53%;
+    margin: -100px 0 0 -150px;
+    text-align: center;
+    color: brown;
+}
+
+.aboutcontainer {
+    position: absolute;
+    width: 17%;
+    z-index: 15;
+    top: 25%;
+    left: 49%;
+    margin: -100px 0 0 -150px;
+    text-align: center;
+}
+
+/* .aboutcontainer .git h4{
+    margin-top: 10px;
+} */
+
+
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+  
+  .copyrightimg {
+    height: 30px;
+    margin-bottom: -9px;
+  }
