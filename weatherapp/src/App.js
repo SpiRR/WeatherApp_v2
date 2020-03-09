@@ -10,7 +10,8 @@ import About from './pages/AboutPage';
 import WeatherOutput from './pages/WeatherOutput';
 import './pages/style.css';
 
-const api_key = '4f350d63f4e92a8f43ed43220ff18414';
+// shouldn't be committet fecth from file?
+const api_key = ;
 
 export default class App extends Component {
 
