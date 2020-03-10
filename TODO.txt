@@ -31,3 +31,7 @@ Styling
     Styling of Weather page
     Styling of About page
 
+API: 
+    Hidden with .gitignore
+
+Overall consistency: DONE

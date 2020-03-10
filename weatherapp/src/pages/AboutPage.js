@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
 export default class About extends Component {
-    render(){
-        return(
+    render () {
+        return (
             <div className="aboutcontainer">
                 <div className="api">
                     <h4>For more info about the API:</h4>

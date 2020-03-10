@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
 export default class Form extends Component {
-    render(){
-        return(
+    render () {
+        return (
             <div className="formcontainer">
                 <form className="weatherForm" onSubmit={this.props.getWeather}>
                     <input type="text" name="city" placeholder="Enter City"/>

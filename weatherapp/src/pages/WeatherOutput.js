@@ -5,8 +5,8 @@ import { FaTemperatureLow } from "react-icons/fa";
 
 
 export default class WeatherOutput extends Component {
-    render() {
-        return(
+    render () {
+        return (
             <div className="weatherinfo">
                 {this.props.city &&  <p> <strong>{this.props.city} , {this.props.country}</strong> <MdMyLocation className="wiconLocation"/></p>}
                 {this.props.description && <p><label><strong>Description:</strong> </label> <i> {this.props.description} </i></p>}
