@@ -104,3 +104,4 @@ dist
 .tern-port
 weatherapp/src/App.js
 weatherapp/src/pages/data/api.json
+weatherapp/src/pages/data/data.json
